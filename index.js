@@ -9,7 +9,7 @@ const scrapeCourse = async () => {
   });
   const page = await browser.newPage();
   
-  // Start at the course overview page
+  // Add link to course 'overview' page
   await page.goto("https://learn.bdadyslexia.org.uk/preview/#/course/143557/overview", {
     waitUntil: "networkidle2",
   });
